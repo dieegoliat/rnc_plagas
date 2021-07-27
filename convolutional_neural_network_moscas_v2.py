@@ -37,6 +37,7 @@ training_set = train_datagen.flow_from_directory(
         batch_size=32,
         class_mode='binary')
 
+#Esto es un comenrario para mejorar el código.
 
 # ### Preprocessing the Test set
 
