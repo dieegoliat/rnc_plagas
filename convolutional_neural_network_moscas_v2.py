@@ -9,7 +9,7 @@
 
 
 import tensorflow as tf
-from keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 
 # In[2]:
@@ -136,7 +136,7 @@ cnn.fit(training_set, validation_data=test_set, epochs=10, steps_per_epoch=50, v
 
 
 import numpy as np
-from keras.preprocessing import image
+from tensorflow.keras.preprocessing import image
 test_image = image.load_img('dataset_moscas/single_prediction/mosca_comun_or_frutos.1.jpg', target_size = (150, 150))
 test_image = image.img_to_array(test_image)
 test_image = np.expand_dims(test_image, axis = 0)
